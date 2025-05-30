@@ -7,7 +7,7 @@ static int min_width = 500;                    /* minimum width when centered */
 static const float menu_height_ratio = 4.0f;  /* This is the ratio used in the original calculation */
 static const char black[]       = "#1e1d2d"; // Matches your original black
 static const char base[]        = "#eff1f5"; // Latte Base
-static const char text[]        = "#4c4f69"; // Latte Text
+static const char textCol[]        = "#4c4f69"; // Latte Text
 static const char gray2[]       = "#6c6f85"; // Using Latte Subtext0 for a lighter gray
 static const char gray3[]       = "#8c8fa1"; // Using Latte Overlay1 for a medium gray
 static const char gray4[]       = "#acb0be"; // Using Latte Surface2 for a lighter gray
@@ -25,7 +25,7 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { text, base },
+	[SchemeNorm] = { textCol, base },
 	[SchemeSel] = { base, peach },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */

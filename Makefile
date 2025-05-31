@@ -9,7 +9,8 @@ OBJ = $(SRC:.c=.o)
 all: dmenu stest
 
 .c.o:
-	$(CC) -c $(CFLAGS) $<
+	# $(CC) -c $(CFLAGS) $<
+	$(CC) $<
 
 config.h:
 	cp config.def.h $@
